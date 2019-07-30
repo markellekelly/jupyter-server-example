@@ -1,7 +1,0 @@
-README.md
-setup.py
-my_ext.egg-info/PKG-INFO
-my_ext.egg-info/SOURCES.txt
-my_ext.egg-info/dependency_links.txt
-my_ext.egg-info/entry_points.txt
-my_ext.egg-info/top_level.txt
