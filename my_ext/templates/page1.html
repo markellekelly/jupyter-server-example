@@ -1,2 +1,19 @@
-<h2>Page 1</h2>
-<p><b><i>it's a paragraph</i></b></p>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript">
+    /* Remove token from URL. */
+    (function () {
+      var parsedUrl = new URL(window.location.href);
+      if (parsedUrl.searchParams.get('token')) {
+        parsedUrl.searchParams.delete('token');
+        window.history.replaceState({ }, '', parsedUrl.href);
+      }
+    })();
+  </script>
+</head>
+<body>
+  <h1> My server extension page 1</h1>
+  <p>requested {{text}}</p>
+</body>

@@ -1,6 +1,5 @@
 from .app import MyExt
 
-
 EXTENSION_NAME = "my_ext"
 
 def _jupyter_server_extension_paths():
