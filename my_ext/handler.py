@@ -6,9 +6,8 @@ class MyExtHandler(ExtensionHandler):
         return self.settings['myext_jinja2_env'].get_template(name)
 
     def get(self):
-        base_url = self.settings.get('base_url')
-        # pass base url (to find .js) to html file
-        html = self.render_template("index.html", base_url=base_url)
+        # Can get base url with self.settings.get('base_url').
+        html = self.render_template("index.html")
         self.write(html)
 
 
@@ -19,7 +18,7 @@ class MyExtHandler2(ExtensionHandler):
 
     def get(self, path):
         base_url = self.settings.get('base_url')
-        #pass input text (path) to the html file
+        # Pass input text (path) to the html file.
         html = self.render_template("page1.html", text=path)
         self.write(html)
 
