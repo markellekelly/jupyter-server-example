@@ -121,7 +121,7 @@ When an extension application is launched, it
     )
     ```
 
-**How do I pass in my JavaScript?**
+## How do I pass in my JavaScript?
 1. In your extension handler, pass the base_url to your template.
 ```python
 def get(self):
