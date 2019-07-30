@@ -122,14 +122,7 @@ When an extension application is launched, it
     ```
 
 ## How do I pass in my JavaScript?
-1. In your extension handler, pass the base_url to your template.
-```python
-def get(self):
-        base_url = self.settings.get('base_url')
-        html = self.render_template("index.html", base_url=base_url)
-        ...
-```
-2. In your HTML template file, reference your bundled JavaScript in a `<script>`.
+In your HTML template file, reference your bundled JavaScript in a `<script>` using `static_url`.
 ```html
     <script src="{{static_url('bundle.js')}}" type="text/javascript" charset="utf-8"></script>
 ```
