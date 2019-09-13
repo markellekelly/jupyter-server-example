@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("console.log(\":)\");\n\n\n//# sourceURL=webpack:///./my_ext/static/index.js?");
+eval("function main() {\n    let div = document.getElementById(\"mydiv\");\n    div.innerText = \"pulled from TS\";\n}\nwindow.addEventListener('load', main);\n\n\n//# sourceURL=webpack:///./my_ext/static/index.js?");
 
 /***/ }),
 
